@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Experts Solution</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header { background: #0a2540; color: white; padding: 15px; text-align: center; }
+    nav { background: #0077b6; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px; }
+    footer { background: #0a2540; color: white; text-align: center; padding: 10px; }
+    .card { background: #f4f4f4; padding: 20px; margin: 10px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tech Experts Solution</h1>
+  <p>Ramachandrapuram - Your Trusted IT Partner</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Welcome to Tech Experts Solution, located in Ramachandrapuram. We provide modern IT solutions including web development, cloud services, and DevOps support.</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Tech Experts Solution is a growing IT service provider offering cutting-edge technology solutions. Our mission is to help businesses grow digitally with reliable and scalable solutions.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="card">Web Development</div>
+  <div class="card">Cloud & AWS Services</div>
+  <div class="card">DevOps Automation</div>
+  <div class="card">Mobile App Development</div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <p>We have worked on multiple projects including e-commerce websites, banking apps, and automation pipelines using Jenkins, Docker, and Kubernetes.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required><br><br>
+    <input type="email" placeholder="Your Email" required><br><br>
+    <textarea placeholder="Your Message" required></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="msg"></p>
+</section>
+
+<footer>
+  <p>© 2026 Tech Experts Solution | Ramachandrapuram</p>
+</footer>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById('msg').innerText = "Thank you! We will contact you soon.";
+}
+</script>
+
+</body>
+</html>
